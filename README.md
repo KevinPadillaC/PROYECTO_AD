@@ -1,6 +1,6 @@
-##### **Análisis exploratorio de la salinidad del agua subterránea en pozos del acuífero costero de Olón**
+### **Análisis exploratorio de la salinidad del agua subterránea en pozos del acuífero costero de Olón**
 
-###### **Descripción del proyecto**
+#### **Descripción del proyecto**
 
 
 
@@ -12,7 +12,7 @@ El análisis se desarrolló en Python mediante un notebook de Jupyter llamado **
 
 
 
-###### **Elección del conjunto de datos**
+#### **Elección del conjunto de datos**
 
 
 
@@ -30,15 +30,15 @@ Este proyecto integra información proveniente de distintas fuentes ambientales 
 
 
 
-\- \*\*CHIRPS\*\*: datos de precipitación mensual.
+- *CHIRPS*: datos de precipitación mensual.
 
-\- \*\*MOD16\*\*: datos de evapotranspiración.
+- *MOD16*: datos de evapotranspiración.
 
-\- \*\*Copernicus\*\*: datos de elevación.
+- *Copernicus*: datos de elevación.
 
-\- \*\*NDVI\*\*: índice de vegetación calculado a partir de imágenes satelitales.
+- *NDVI*: índice de vegetación calculado a partir de imágenes satelitales.
 
-README.md: descripción general del proyecto.
+- *README.md*: descripción general del proyecto.
 
 
 
@@ -126,59 +126,49 @@ p**endiente:** pendiente del terreno
 
 
 
-###### **Metodología**
+#### **Metodología**
 
 El código se desarrolló mediante un flujo de análisis secuencial:
 
 
 
-Carga de la base de datos.
+1.Carga de la base de datos.
 
-Revisión inicial de columnas, tipos de datos y estructura.
+2.Revisión inicial de columnas, tipos de datos y estructura.
 
-Normalización de nombres de columnas.
+3.Normalización de nombres de columnas.
 
-Clasificación de variables por grupo.
+4.Clasificación de variables por grupo.
 
-Conversión de variables numéricas.
+5.Conversión de variables numéricas.
 
-Revisión de valores nulos y registros duplicados.
+6.Revisión de valores nulos y registros duplicados.
 
-Validación de rangos temporales.
+7.Validación de rangos temporales.
 
-Revisión de consistencia entre estado operativo y nivel dinámico.
+8.Revisión de consistencia entre estado operativo y nivel dinámico.
 
-Corrección de inconsistencias en la variable estado.
+9.Corrección de inconsistencias en la variable estado.
 
-Tratamiento inicial de valores nulos.
+10.Tratamiento inicial de valores nulos.
 
-Justificación de nulos conservados.
+11.Justificación de nulos conservados.
 
-Estadística descriptiva.
+12.Estadística descriptiva.
 
-Análisis exploratorio de salinidad.
+13.Análisis exploratorio de salinidad.
 
-Elaboración de visualizaciones.
+14.Elaboración de visualizaciones.
 
-Interpretación de resultados, conclusiones y recomendaciones.
+15.Interpretación de resultados, conclusiones y recomendaciones.
 
-Tratamiento de datos
-
-
+16.Tratamiento de datos
 
 
 
-No se imputaron automáticamente variables como:salinidad, porque es la variable principal del análisis.
-
-do, porque empezó a registrarse desde 2024.
-
-nivel\_din, cuando el pozo no estuvo operativo.
-
-
+No se imputaron automáticamente variables como:salinidad, porque es la variable principal del análisis; do, porque empezó a registrarse desde 2024 y nivel_din, cuando el pozo no estuvo operativo.
 
 En el notebook se generaron diferentes gráficos para interpretar los datos:
-
-
 
 Histograma de salinidad.
 
@@ -200,13 +190,11 @@ Gráfico de dispersión entre conductividad eléctrica y salinidad.
 
 Gráfico espacial de salinidad promedio por pozo.
 
-
-
-El proyecto fue desarrollado en un ambiente virtual de Python. El entorno virtual se llama proyectoad. Ademas, se incluye el archivo requirements.txt, donde se registran las librerías necesarias.
+El proyecto fue desarrollado en un ambiente virtual de Python. El entorno virtual se llama ´"proyectoad". Ademas, se incluye el archivo requirements.txt, donde se registran las librerías necesarias.
 
 
 
-###### **Librerías utilizadas**
+#### **Librerías utilizadas**
 
 
 
@@ -214,15 +202,13 @@ Las principales librerías utilizadas fueron:
 
 
 
-numpy
+-numpy
 
-pandas
+-pandas
 
-matplotlib
+-matplotlib
 
-seaborn
-
-.gitignore: archivo que evita subir elementos innecesarios como el entorno virtual.
+-seaborn
 
 
 
